@@ -1,0 +1,224 @@
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700,800');
+
+body {
+  margin: 3em;
+
+}
+
+h1, h2, h3, h4 {
+  color: #bd5248;
+  font-family: Open Sans;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  color: #333;
+}
+
+/* 11 columns; 2 for sidebar 9 for cards && 6 rows */
+.cssgrid {
+  display: grid;
+  grid-gap: 3em;
+  grid-template-rows: repeat(6, 1fr);
+  grid-template-columns: repeat(11, 1fr); 
+
+
+}
+
+.item.two,
+.three,
+.four,
+.five,
+.six,
+.seven,
+.eight,
+.nine,
+.ten {
+  grid-row: span 2;
+  grid-column: span 3;
+}
+
+/* Box shadow and hover for cards */
+.item {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+
+}
+
+.item img {
+  transition: transform 0.5s ease; /* Add a smooth transition */
+}
+
+.item img:hover {
+  transform: scale(1.5); /* Increase the size of the image by 1.5 times */
+}
+
+.item:hover {
+  -webkit-box-shadow: 3px 6px 23px 10px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 3px 6px 23px 10px rgba(0, 0, 0, 0.15);
+  box-shadow: 3px 6px 23px 10px rgba(0, 0, 0, 0.15);
+  transition: 0.2s;
+}
+
+/* Hide box shadow and hover for sidebar */
+.item.one {
+  border-bottom: 0px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0px 0px rgba(0, 0, 0, 0.15);
+  grid-row: span 6;
+  grid-column: span 2;
+  color: white;        
+
+}
+
+.item.one:hover {
+  border-bottom: 0px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0px 0px rgba(0, 0, 0, 0.15);
+}
+
+/* Card Styling */
+.cards {
+  margin: 1.2rem;
+}
+
+.pugprice {
+  color: #bd5248;
+  text-align: center;
+  font-size: 1.25em;
+  margin-top: -1.2em;
+}
+
+#puglogo {
+  text-align: center;
+  margin-left: 0.25em;
+  font-weight: 600;
+  font-size: 3em;       
+
+}
+
+#puglogosm {
+  text-align: center;
+  font-size: 14px;
+  color: #333;
+  font-weight: 600;
+  margin-top: -2.5em;
+  margin-left: 0.5em;
+}
+
+#pugcontact,
+#pugaboutus,
+#pugsocial {
+  top: 30%;
+  font-size: 18px;
+  text-align: center;
+}
+
+#pugphone,
+#puginsta,
+#puginfo {
+  text-align: center;
+}
+
+hr {
+  margin: 2em;
+}
+
+.mission {
+  margin: 1em;
+  font-size: 1.2em;
+}
+
+.shirt {
+  width: 100%;
+  height: 100%;
+}
+
+.itemdesc {
+  color: #333;
+  text-align: center;
+  font-size: 5px;
+}
+/*
+/************** MEDIA *************/
+
+@media (max-width: 980px) {
+  /* 2 columns */
+  .cssgrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0px;
+  }
+
+  /* 2 columns */
+  .item.one {
+    height: 10em;
+    margin-top: 2em;
+    z-index: -1;
+  }
+
+  /* 1 column */
+  .item.two,
+  .three,
+  .four,
+  .five,
+  .six,
+  .seven,
+  .eight,
+  .nine,
+  .ten {
+    grid-column: span 14;
+  }
+
+  /* Hide box shadow & border, Hide sidebar contents, Hide hover */
+  .item {
+    border-bottom: 0px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0px 0px rgba(0, 0, 0, 0.
+
+15);
+  }
+
+  #pugcontact,
+  #pugaboutus,
+  #pugphone,
+  #puginfo,
+  #puginsta,
+  #pugsocial,
+  hr {
+    visibility: hidden;
+    width: 0px;
+    height: 0px;
+  }
+
+  .item:hover {
+    border-bottom: 0px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0px 0px rgba(0, 0, 0, 0.15);
+  }
+}
+
+/* Box shadow and hover for cards */
+.item {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+}
+
+.item img {
+  transition: transform 0.5s ease, box-shadow 0.3s ease; /* Add a smooth transition for transform and box-shadow */
+}
+
+.item img:hover {
+
+  transform: scale(2); /* Increase the size of the image slightly */
+  box-shadow: 04 0 10px rgba(0, 0, 0, 0.3); /* Add a subtle box shadow around the image */
+  border: 1em solid white;
+}
+
+.item:hover {
+  -webkit-box-shadow: 3px 6px 23px 10px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 3px 6px 23px 10px rgba(0, 0, 0, 0.15);
+  box-shadow: 3px 6px 23px 10px rgba(0, 0, 0, 0.15);
+  transition: 0.2s;
+}
+ 
