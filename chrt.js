@@ -14,7 +14,7 @@ function drawChart1() {
     hAxis: {title: '"Hover over the bar chart to view details." Year', titleTextStyle: {color: 'red'}},
     chartArea: {
         left: 100, // Adjust this value according to your preference
-        width: '50%', // Adjust this value according to your preference
+        width: '100%', // Adjust this value according to your preference
     },
     series: {
         0: {targetAxisIndex: 0},
