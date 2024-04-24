@@ -17,12 +17,23 @@
       a{
         text-decoration: none;
       }
-        .mate{
-           border: 2em double white;
+        .mate {
+    border: 2em double white;
     background-color: skyblue;
-    box-shadow:  1px -20px  5px  rgb(160, 157, 157),
-             4em 30em 4em red;
-        }
+    box-shadow: 1px -20px 5px rgb(160, 157, 157),
+                4em 30em 4em red;
+}
+
+/* Mobile-specific styles */
+@media screen and (max-width: 480px) {
+    .mate {
+        /* Adjust the styles for mobile screens here */
+        border: 1em solid white;
+        background-color: lightblue;
+        box-shadow: none;
+    }
+}
+
     </style>
 </head>
 <body>
