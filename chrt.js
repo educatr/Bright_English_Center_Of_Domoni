@@ -11,7 +11,7 @@ function drawChart1() {
 
   var options = {
     title: " Performance",
-    hAxis: {title: 'Year', titleTextStyle: {color: 'red'}},
+    hAxis: {title: '"Hover over the bar chart to view details." Year', titleTextStyle: {color: 'red'}},
     chartArea: {
         left: 100, // Adjust this value according to your preference
         width: '50%', // Adjust this value according to your preference
