@@ -3,10 +3,10 @@ google.setOnLoadCallback(drawChart1);
 function drawChart1() {
   var data = google.visualization.arrayToDataTable([
     ['Year', 'Levels', 'Effective'],
-    ['2023',  1,  9],
+    ['2023',  'Start up',  9],
     ['2024',  1,  25],
-    ['2024',  2,  25],
-    ['2024', 3,   25],
+    ['2024',  2,  28],
+    ['2024', 3,   38],
   ]);
 
   var options = {
