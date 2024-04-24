@@ -34,7 +34,7 @@ google.load("visualization", "1", {packages:["corechart"]});
 google.setOnLoadCallback(drawChart2);
 function drawChart2() {
   var data = google.visualization.arrayToDataTable([
-    ['Year', 'Population'],
+    ['Year', 'Population'], ['2012', 16276],
     ['2023', 45000],
     ['2024', 15351]
   ]);
